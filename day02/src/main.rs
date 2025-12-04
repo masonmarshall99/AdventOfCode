@@ -8,7 +8,7 @@ fn main() {
 
 fn part_1(file: &str) -> u64 {
     let full_content = fs::read_to_string(file)
-        .expect("{file} could not be read.");
+        .expect(&format!("{file} could not be read."));
     let content = full_content.trim();
 
     let mut sum = 0;
@@ -40,7 +40,7 @@ fn part_1(file: &str) -> u64 {
 
 fn part_2(file: &str) -> u64 {
     let full_content = fs::read_to_string(file)
-        .expect("{file} could not be read.");
+        .expect(&format!("{file} could not be read."));
     let content = full_content.trim();
 
     let mut sum = 0;
